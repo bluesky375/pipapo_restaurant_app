@@ -1,0 +1,25 @@
+
+<ion-content>
+  <ion-img class="top_logo" src="./assets/images/logo.png"></ion-img>
+  <ion-img src="./assets/images/ic_serve_top.png"></ion-img>
+  <div class="item_cont">
+    <p>Login</p>
+    <ion-list>
+      <ion-item lines="none">
+        <ion-input placeholder="E-Mail"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-input placeholder="Password"></ion-input>
+      </ion-item>
+      <ion-button shape="round" expand="block" color="main" (click)="onLogin()">
+        Einloggen
+      </ion-button>
+      <a (click)="goForgot()">Passwort vergessen?</a>
+      <ion-button shape="round" expand="block" color="medium" [routerLink]="'/register'" [routerDirection]="'forward'">
+        Registrieren
+      </ion-button>
+    </ion-list>
+  </div>
+  <ion-img src="./assets/images/ic_serve_down.png"></ion-img>
+  
+</ion-content>
